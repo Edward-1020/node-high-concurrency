@@ -22,7 +22,6 @@ export default class Test extends Service {
         if (seconds <= 0 ) {
             this.app.redis.set(realKey, str);
         } else {
-            // 查api
             this.app.redis.set(realKey, str, 'EX', seconds);
         }
         return true;
