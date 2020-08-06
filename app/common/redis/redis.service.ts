@@ -17,6 +17,7 @@ export default class Test extends Service {
         if (!str) {
             return false;
         }
+        //className:prefixkey
         const realKey = prefix.getPrefix() + key;
         const seconds = prefix.getExpireSeconds();
         if (seconds <= 0 ) {
